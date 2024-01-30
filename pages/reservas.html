@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4017473ef4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/lightbox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Reservas - A break & a Coffee</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>A break & a Coffee</h1> <!-- puede que lo cambie al logo -->
+        </a>
+        
+        <div class="icono">
+            <i class="fa-solid fa-bars" onClick="desplegarMenu()"></i>
+        </div>
+        <nav class=" " id="menu">
+            <ul>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="reservas.html" class="pag-actual">Reservas</a></li>
+                <li><a href="pedido.html">Pedido</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pag-titulo">
+            <h2>Reservas</h2>
+        </div>
+        <section class="sec-form">
+            <div class="form-izq">
+                <form method="get" action="respuesta.html" class="form-contact">
+                    <h3>Información de la reserva</h3>
+                    <div>
+                        <label for="">Zona</label>
+                        <select name="zona" id="" class="campos" required>
+                            <option value="Salon">Salón</option>
+                            <option value="Terraza">Terraza</option>
+                            <option value="Vereda">Vereda</option>
+                            <option value="Cualquiera">Cualquiera</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Fecha</label>
+                        <input type="date" name="" id="" class="campos" required>
+                    </div>
+                    <div>
+                        <label for="">Hora</label>
+                        <select name="horario" id="" class="campos" required>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Cantidad de personas</label>
+                        <select name="personas" id="" class="campos" required>
+                            <option value="1">1 persona</option>
+                            <option value="2" selected>2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5">5 personas</option>
+                            <option value="6">6 personas</option>
+                            <option value="7">7 personas</option>
+                            <option value="8">8 personas</option>
+                            <option value="9">9 personas</option>
+                            <option value="10">10 personas</option>
+                        </select>
+                    </div>
+                    <h3>Datos personales para la reserva</h3>
+                    <div>
+                        <input type="text" placeholder="Nombre" class="campos" required>
+                        <input type="tel" placeholder="Teléfono" class="campos" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="E-mail" class="campos" required>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="2" placeholder="Indique intolerancia o alergia" class="campos"></textarea>
+                    </div>
+                    <div class="form-btn">
+                        <button class="btn">Reservar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-der">
+                <div class="cajaslider">
+                    <img src="../img/reserva-de-mesa.png" class="mySlides" alt="Salón para reserva de mesa">
+                    <img src="../img/reserva-exterior.png" class="mySlides"  alt="Exterior para reserva de mesa">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contacto">
+            <h4>Datos de contacto</h4>
+            <p>Dirección:</p>
+            <p>Teléfono:</p>
+            <p>Correo:</p>
+            <ul class="redes">
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </div>
+        <div class="instagram">
+            <h4>Instagram</h4>
+            <div>
+                <a href="../img/entrada.jpg" data-lightbox="instagram" title="Tostadas con tomates, aceitunas y aceite de oliva">
+                    <img src="../img/entrada.jpg" alt="Tostadas con tomates, aceitunas y aceite de oliva">
+                </a>
+                <a href="../img/cafe.jpg" data-lightbox="instagram" title="Café Cappuccino">
+                    <img src="../img/cafe.jpg" alt="Café Cappuccino">
+                </a>
+                <a href="../img/cheesecake.jpg" data-lightbox="instagram" title="Porción de cheesecake">
+                    <img src="../img/cheesecake.jpg" alt="Porción de cheesecake">
+                </a>
+            </div>
+            <div>
+                <a href="../img/coffee-sandwich.jpg" data-lightbox="instagram" title="Tostado con café">
+                    <img src="../img/coffee-sandwich.jpg" alt="Tostado con café">
+                </a>
+                <a href="../img/coffee.jpg" data-lightbox="instagram" title="Café con leche servido en la mesa">
+                    <img src="../img/coffee.jpg" alt="Café con leche servido en la mesa">
+                </a>
+                <a href="../img/ensalada.jpg" data-lightbox="instagram" title="Ensalada César">
+                    <img src="../img/ensalada.jpg" alt="Ensalada César">
+                </a>
+            </div>
+        </div>
+        <div class="horario">
+            <h4>Horario</h4>
+            <p>Lunes de 9 a 22:00</p>
+            <p>Martes de 9 a 23:00</p>
+            <p>Miércoles de 9 a 23:00</p>
+            <p>Jueves de 9 a 23:00</p>
+            <p>Viernes de 9 a 23:00</p>
+            <p>Sábado de 9 a 23:00</p>
+            <p>Domingo de 9 a 22:00</p>
+        </div>
+        <div class="mapa">
+            <h4>Visítanos</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26084341.917257074!2d-81.6327334419076!3d-37.054533624307325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2ses!4v1664461074534!5m2!1ses!2ses" width="180" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <p class="footer-copyright">Copyright <a href="presentacion.html"><span>Igmar Lovera - A Coffee & a Break</span></a> &copy; 2022</p>
+
+    <script>
+        /* MENÚ HAMBURGUESA */
+        function desplegarMenu() {
+            let x = document.getElementById("menu");
+            if (x.className === " ") {
+                x.className += "responsive";
+            } else {
+                x.className = " ";
+            }
+        }
+
+        /* CARROUSEL */
+        let slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        let i;
+        // acá define qué elemento entra en el slider
+        let x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+        }
+
+        carousel();
+        function carousel() {
+        let i;
+        let x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+        }
+    </script>
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
